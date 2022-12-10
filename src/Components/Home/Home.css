@@ -1,0 +1,11 @@
+.home {
+  background-image: url("../../Images/Home_BG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
