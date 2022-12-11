@@ -11,7 +11,9 @@
 .nav-container {
   position: relative;
   top: 2%;
+  margin-bottom: 5%;
   z-index: 5;
+  background-color: #424250;
 }
 .nav-image {
   flex: 1;
@@ -52,11 +54,38 @@
 .menu-bar:hover {
   cursor: pointer;
 }
-
+.small-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 14.5%;
+  margin-top: 5%;
+}
 .burger {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  list-style: none;
+}
+.burger-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33%;
+  width: 100%;
 }
 
+.burger-list-item:hover,
+.burger-list-item a:hover {
+  color: #8c8b97;
+}
+.burger a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
 .small-menu {
   width: 100vw;
   height: 100vh;

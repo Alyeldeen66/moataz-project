@@ -37,18 +37,30 @@ const NavBar = () => {
         )}
       </div>
       {!showMenu && (
-        <div className="small-menu">
-          <ul className="burger">
-            <li>
-              <a href="#">About us</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Contact us</a>
-            </li>
-          </ul>
+        <div className="small-menu-container">
+          <div className="small-menu">
+            <ul className="burger">
+              <div className="burger-list-item">
+                <li>
+                  <a href="#">About us</a>
+                  <hr></hr>
+                </li>
+              </div>
+              <div className="burger-list-item">
+                <li>
+                  <a href="#">Services</a>
+                  <hr></hr>
+                </li>
+              </div>
+              <div className="burger-list-item">
+                <li>
+                  <a href="#">Contact us</a>
+                  <hr></hr>
+                </li>
+              </div>
+            </ul>
+            <hr></hr>
+          </div>
         </div>
       )}
     </div>
