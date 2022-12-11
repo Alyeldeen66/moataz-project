@@ -34,6 +34,7 @@
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  margin: 0;
 }
 
 .nav-links a {
@@ -100,6 +101,9 @@
   .nav-links-container {
     flex: 0.5;
   } */
+  .main-nav {
+    max-width: 500px;
+  }
   .nav-links {
     display: none;
   }
