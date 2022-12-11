@@ -84,8 +84,61 @@ section {
 
 .how-it-works-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "c1 a1"
+    "a2 c2"
+    "c3 a3";
+  grid-row-gap: 40px;
+  justify-items: center;
+}
+
+.hiw-1 {
+  grid-area: c1;
+}
+.hiw-2 {
+  grid-area: c2;
+}
+.hiw-3 {
+  grid-area: c3;
+}
+.anim1 {
+  grid-area: a1;
+}
+.anim2 {
+  grid-area: a2;
+}
+.anim3 {
+  grid-area: a3;
+}
+
+.how-it-works-animation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-it-works-animation-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: circle 3s linear 0s infinite alternate;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(3);
+  }
 }
 
 .how-it-works-card {

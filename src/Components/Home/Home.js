@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "font-awesome/css/font-awesome.min.css";
 
 function Home() {
@@ -63,7 +62,7 @@ function Home() {
             <hr />
 
             <div className="how-it-works-cards">
-              <div className="how-it-works-card">
+              <div className="how-it-works-card hiw-1">
                 <div className="how-it-works-card-icon">
                   <i class="fa-solid fa-arrow-pointer"></i>
                 </div>
@@ -74,7 +73,11 @@ function Home() {
                   quibusdam voluptas quidem quos nemo quas. Quisquam, quae.
                 </p>
               </div>
-              <div className="how-it-works-card">
+              <div className="how-it-works-animation anim1">
+                <div className="how-it-works-animation-circle"></div>
+                <div className="how-it-works-animation-line"></div>
+              </div>
+              <div className="how-it-works-card hiw-2">
                 <div className="how-it-works-card-icon">
                   <i class="fa-solid fa-arrow-pointer"></i>
                 </div>
@@ -85,7 +88,11 @@ function Home() {
                   quibusdam voluptas quidem quos nemo quas. Quisquam, quae.
                 </p>
               </div>
-              <div className="how-it-works-card">
+              <div className="how-it-works-animation anim2">
+                <div className="how-it-works-animation-circle"></div>
+                <div className="how-it-works-animation-line"></div>
+              </div>
+              <div className="how-it-works-card hiw-3">
                 <div className="how-it-works-card-icon">
                   <i class="fa-solid fa-arrow-pointer"></i>
                 </div>
@@ -95,6 +102,10 @@ function Home() {
                   Quisquam voluptates, quod, quia, voluptate quae voluptatem
                   quibusdam voluptas quidem quos nemo quas. Quisquam, quae.
                 </p>
+              </div>
+              <div className="how-it-works-animation anim3">
+                <div className="how-it-works-animation-circle"></div>
+                <div className="how-it-works-animation-line"></div>
               </div>
             </div>
           </div>
