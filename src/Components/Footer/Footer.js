@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import "font-awesome/css/font-awesome.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -105,9 +107,24 @@ const Footer = () => {
           <hr className="break" />
         </div>
       </div>
+      <div className="social-media-container">
+        <div className="social-media">
+          <div className="icon">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div className="icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div className="icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
       <div>
         <div className="footer-trademark">
-          <h5>Copyright © 2022 · REI Call Center · Design by</h5>
+          <h5 style={{ textAlign: "center" }}>
+            Copyright © 2022 · REI Call Center · Design by
+          </h5>
         </div>
       </div>
     </div>
