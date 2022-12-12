@@ -4,7 +4,6 @@ const NavBar = () => {
   const [showMenu, setShowMenu] = useState(true);
   const openMenu = () => {
     const menuIcon = document.querySelector(".menu-bar");
-    console.log(menuIcon);
     setShowMenu(false);
   };
   const closeMenu = () => {

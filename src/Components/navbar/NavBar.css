@@ -7,16 +7,21 @@
   margin-right: 10%;
   border-radius: 1rem;
   padding: 0.5%;
+  position: sticky;
+  top: 0;
 }
 .nav-container {
-  top: 0%;
   margin-bottom: 5%;
   z-index: 5;
   background-color: #424250;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 0%;
   opacity: 0.9;
   transition: top 0.3s;
+  z-index: 100;
 }
+
 .nav-image {
   flex: 1;
 }
