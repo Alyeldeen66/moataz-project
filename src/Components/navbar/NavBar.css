@@ -9,11 +9,13 @@
   padding: 0.5%;
 }
 .nav-container {
-  position: relative;
-  top: 2%;
+  top: 0%;
   margin-bottom: 5%;
   z-index: 5;
   background-color: #424250;
+  position: sticky;
+  opacity: 0.9;
+  transition: top 0.3s;
 }
 .nav-image {
   flex: 1;
