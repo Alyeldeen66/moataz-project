@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./NavBar.css";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -10,6 +10,19 @@ const NavBar = () => {
     setShowMenu(true);
   };
 
+  const listenScrollEvent = () => {
+    document.getElementById("link-1").classList.remove("link-hover");
+    if (window.scrollY > 520) {
+      document.getElementById("link-1").classList.add("link-hover");
+    } else if (window.scrollY > 3000) {
+      document.getElementById("link-1").classList.add("link-hover-color");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  });
+
   return (
     <>
       <div className="nav-container">
@@ -20,13 +33,19 @@ const NavBar = () => {
           <div className="nav-links-container">
             <ul className="nav-links">
               <li>
-                <a href="#">About us</a>
+                <a id="link-1" href="#">
+                  About us
+                </a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a id="link-2" href="#">
+                  Services
+                </a>
               </li>
               <li>
-                <a href="#">Contact us</a>
+                <a id="link-3" href="#">
+                  Contact us
+                </a>
               </li>
             </ul>
           </div>
