@@ -6,8 +6,47 @@
   height: 80vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  position: relative;
+}
+
+.home-container {
+  position: absolute;
+  right: 8%;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  border-radius: 20px;
+}
+
+.home-container h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.home-container p {
+  font-size: 20px;
+}
+
+.home-btn {
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.home-btn:hover {
+  background-color: white;
+  color: black;
 }
 
 .why-us-container {
@@ -61,6 +100,8 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 9px 10px 8px lightgray;
+  z-index: 1;
 }
 
 .how-it-works {
@@ -70,7 +111,7 @@ section {
 }
 
 .how-it-works h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   word-spacing: 15px;
 }
 
@@ -80,6 +121,10 @@ section {
 
 .how-it-works-container {
   padding: 30px 0;
+}
+
+.how-it-works-title-container {
+  margin: 20px 0 40px 0;
 }
 
 .how-it-works-cards {
@@ -122,27 +167,32 @@ section {
 }
 
 .how-it-works-animation-circle {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background: white;
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: circle 3s linear 0s infinite alternate;
+  transform-origin: top left;
+  animation: circle 5s linear 0s infinite;
+}
+
+.how-it-works-animation-circle:nth-child(even) {
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes circle {
   0% {
-    transform: scale(0);
+    transform: rotate(360deg);
   }
   100% {
-    transform: scale(3);
+    transform: rotate(0deg);
   }
 }
 
 .how-it-works-card {
-  border: 1px solid black;
   max-width: 600px;
   padding: 20px;
 
@@ -152,15 +202,8 @@ section {
   justify-content: center;
 }
 
-.how-it-works-card .how-it-works-card-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  width: 80px;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 50px;
+.fa-solid {
+  font-size: 45px;
 }
 
 .how-it-works-card .how-it-works-card-title {
@@ -178,17 +221,56 @@ section {
   .home {
     background: #424250;
   }
+  .home-container {
+    align-items: center;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .home-btn {
+    margin: 10px;
+  }
   .why-us-cards {
     grid-template-columns: 1fr;
     width: 100%;
     background: white;
   }
+
+  .how-it-works-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "c1" "a1" "c2" "a2" "c3" "a3";
+  }
+
+  .how-it-works-cards .how-it-works-animation {
+    display: none;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .home {
+    background: #424250;
+  }
+
+  .home-container {
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .home-btn {
+    font-size: 35px;
+  }
   .why-us-cards {
     grid-template-rows: 2fr;
     width: 100%;
     background: white;
+  }
+
+  .how-it-works-cards {
+    width: 100%;
   }
 }

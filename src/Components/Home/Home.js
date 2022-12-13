@@ -5,7 +5,19 @@ import "font-awesome/css/font-awesome.min.css";
 function Home() {
   return (
     <>
-      <div className="home"></div>
+      <div className="home">
+        <div className="home-container">
+          <h1 className="home-title">COMPANY LOGO</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Quisquam voluptates, quod, quia, voluptate quae voluptatem
+          </p>
+          <div className="home-btns">
+            <button className="home-btn">GET STARTED</button>
+            <button className="home-btn">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
       <section className="why-us">
         <hr />
         <h1 className="why-us-title">WHY CHOOSE COMPANY?</h1>
@@ -53,19 +65,18 @@ function Home() {
 
         <section className="how-it-works">
           <div className="how-it-works-container">
-            <hr />
-            <h2 className="how-it-works-title">HOW IT WORKS</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Quisquam voluptates, quod, quia, voluptate quae voluptatem
-            </p>
-            <hr />
+            <div className="how-it-works-title-container">
+              <h2 className="how-it-works-title">HOW IT WORKS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Quisquam voluptates, quod, quia, voluptate quae voluptatem
+              </p>
+            </div>
 
             <div className="how-it-works-cards">
               <div className="how-it-works-card hiw-1">
-                <div className="how-it-works-card-icon">
-                  <i class="fa-solid fa-arrow-pointer"></i>
-                </div>
+                <i class="fa-solid fa-arrow-pointer"></i>
+
                 <h3 className="how-it-works-card-title">Card Title</h3>
                 <p className="how-it-works-card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -75,12 +86,12 @@ function Home() {
               </div>
               <div className="how-it-works-animation anim1">
                 <div className="how-it-works-animation-circle"></div>
-                <div className="how-it-works-animation-line"></div>
+                <div className="how-it-works-animation-circle"></div>
+                <div className="how-it-works-animation-circle"></div>
               </div>
               <div className="how-it-works-card hiw-2">
-                <div className="how-it-works-card-icon">
-                  <i class="fa-solid fa-arrow-pointer"></i>
-                </div>
+                <i class="fa-solid fa-cart-shopping"></i>
+
                 <h3 className="how-it-works-card-title">Card Title</h3>
                 <p className="how-it-works-card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -90,12 +101,12 @@ function Home() {
               </div>
               <div className="how-it-works-animation anim2">
                 <div className="how-it-works-animation-circle"></div>
-                <div className="how-it-works-animation-line"></div>
+                <div className="how-it-works-animation-circle"></div>
+                <div className="how-it-works-animation-circle"></div>
               </div>
               <div className="how-it-works-card hiw-3">
-                <div className="how-it-works-card-icon">
-                  <i class="fa-solid fa-arrow-pointer"></i>
-                </div>
+                <i class="fa-solid fa-credit-card"></i>
+
                 <h3 className="how-it-works-card-title">Card Title</h3>
                 <p className="how-it-works-card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -105,7 +116,8 @@ function Home() {
               </div>
               <div className="how-it-works-animation anim3">
                 <div className="how-it-works-animation-circle"></div>
-                <div className="how-it-works-animation-line"></div>
+                <div className="how-it-works-animation-circle"></div>
+                <div className="how-it-works-animation-circle"></div>
               </div>
             </div>
           </div>
