@@ -12,10 +12,13 @@ const NavBar = () => {
 
   const listenScrollEvent = () => {
     document.getElementById("link-1").classList.remove("link-hover");
-    if (window.scrollY > 520) {
+    document.getElementById("link-2").classList.remove("link-hover");
+    if (window.scrollY > 500 && window.scrollY < 1450) {
+      document.getElementById("link-2").classList.remove("link-hover");
       document.getElementById("link-1").classList.add("link-hover");
-    } else if (window.scrollY > 3000) {
-      document.getElementById("link-1").classList.add("link-hover-color");
+    } else if (window.scrollY > 1000) {
+      document.getElementById("link-1").classList.remove("link-hover");
+      document.getElementById("link-2").classList.add("link-hover");
     }
   };
 
