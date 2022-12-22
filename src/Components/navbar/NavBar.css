@@ -11,7 +11,6 @@
   top: 0;
 }
 .nav-container {
-  margin-bottom: 0px;
   z-index: 5;
   background-color: rgb(27, 28, 26);
   position: fixed;
@@ -39,8 +38,8 @@
 
 .link-hover {
   font-size: larger;
-  border: 1px solid white;
-  border-radius: 15px;
+  filter: drop-shadow(0 0 0.2rem white);
+  color: white;
 }
 
 .nav-links {
