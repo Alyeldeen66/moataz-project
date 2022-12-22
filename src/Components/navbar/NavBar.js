@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./NavBar.css";
-import navlogo from "../../Images/nav-logo.png";
+import navlogo from "../../Images/logo.png";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(true);
   const openMenu = () => {
@@ -14,10 +14,13 @@ const NavBar = () => {
   const listenScrollEvent = () => {
     document.getElementById("link-1").classList.remove("link-hover");
     document.getElementById("link-2").classList.remove("link-hover");
-    if (window.scrollY > 500 && window.scrollY < 1450) {
+    if (
+      window.scrollY > window.innerHeight &&
+      window.scrollY < 2 * window.innerHeight
+    ) {
       document.getElementById("link-2").classList.remove("link-hover");
       document.getElementById("link-1").classList.add("link-hover");
-    } else if (window.scrollY > 1000) {
+    } else if (window.scrollY > 2 * window.innerHeight) {
       document.getElementById("link-1").classList.remove("link-hover");
       document.getElementById("link-2").classList.add("link-hover");
     }
