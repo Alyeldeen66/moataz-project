@@ -20,7 +20,7 @@ function Home() {
       </div>
       <section className="why-us">
         <hr />
-        <h1 className="why-us-title">WHY CHOOSE COMPANY?</h1>
+        <h1 className="why-us-title">why choose phone pros?</h1>
         <hr />
         <div className="why-us-container">
           <div className="why-us-cards">

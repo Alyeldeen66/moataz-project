@@ -1,3 +1,8 @@
+:root {
+  --primary: #ffffff;
+  --secondry: black;
+}
+
 .home {
   background-image: url("../../Images/Home_BG.png");
   background-size: cover;
@@ -20,7 +25,7 @@
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
-  color: white;
+  color: var(--primary);
   border-radius: 20px;
 }
 
@@ -38,8 +43,8 @@
   padding: 10px;
   border-radius: 10px;
   font-size: 25px;
-  color: white;
-  border: 1px solid white;
+  color: var(--primary);
+  border: 1px solid var(--primary);
   background-color: transparent;
   transition: background-color 0.5s, color 0.5s;
 }
@@ -53,7 +58,7 @@
   background-image: url("../../Images/why-us.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   width: 100%;
   padding: 5rem 0;
 }
@@ -73,6 +78,7 @@ section {
   font-size: 3rem;
   text-align: center;
   margin: 0 0 3% 0;
+  text-transform: uppercase;
 }
 .why-us {
   background: white;
@@ -94,19 +100,24 @@ section {
   padding: 10px;
   border-radius: 10px;
   background: transparent;
-  border: 1px solid black;
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 9px 10px 8px lightgray;
+  box-shadow: 9px 10px 15px rgba(211, 211, 211, 0.244);
   z-index: 1;
+  color: white;
+}
+
+.why-us-card:nth-child(even) {
+  background-color: #1b1c1a;
 }
 
 .how-it-works {
-  background: #424250;
-  color: white;
+  background: var(--primary);
+  color: var(--secondry);
   text-align: center;
 }
 
@@ -170,25 +181,39 @@ section {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid var(--secondry);
   display: flex;
   justify-content: center;
   align-items: center;
   transform-origin: top left;
-  animation: circle 5s linear 0s infinite;
+  animation: circle-right 10s linear 0s infinite;
 }
 
-.how-it-works-animation-circle:nth-child(even) {
+.how-it-works-animation-circle:nth-child(odd) {
   width: 100px;
   height: 100px;
+  animation: circle-left 10s linear 0s infinite;
 }
 
-@keyframes circle {
+.how-it-works-animation-circle:first-child {
+  animation: circle-right 10s linear 0s infinite;
+}
+
+@keyframes circle-right {
   0% {
     transform: rotate(360deg);
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes circle-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -247,6 +272,10 @@ section {
   .how-it-works-cards .how-it-works-animation {
     display: none;
   }
+
+  .why-us-card {
+    background-color: #1b1c1a;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -268,6 +297,10 @@ section {
     grid-template-rows: 2fr;
     width: 100%;
     background: white;
+  }
+
+  .why-us-card {
+    background-color: #1b1c1a;
   }
 
   .how-it-works-cards {
