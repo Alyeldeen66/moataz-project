@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./NavBar.css";
+import navlogo from "../../Images/nav-logo.png";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(true);
   const openMenu = () => {
@@ -9,7 +10,7 @@ const NavBar = () => {
   const closeMenu = () => {
     setShowMenu(true);
   };
-
+  // Window.inner height
   const listenScrollEvent = () => {
     document.getElementById("link-1").classList.remove("link-hover");
     document.getElementById("link-2").classList.remove("link-hover");
@@ -24,14 +25,14 @@ const NavBar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
-  });
+  }, []);
 
   return (
     <>
       <div className="nav-container">
         <div className="main-nav">
           <div className="nav-image">
-            <img src="https://pixlr.com/images/index/remove-bg.webp" />
+            <img src={navlogo} />
           </div>
           <div className="nav-links-container">
             <ul className="nav-links">
