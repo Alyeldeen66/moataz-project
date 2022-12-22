@@ -1,5 +1,9 @@
+html {
+  background-color: #1b1c1a;
+}
+
 .main-app {
-  background-color: #424250;
+  background-color: #1b1c1a;
   height: 100vh;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;

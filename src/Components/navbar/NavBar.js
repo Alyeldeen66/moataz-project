@@ -46,7 +46,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a id="link-2" href="#">
-                  Services
+                  How it works
                 </a>
               </li>
               <li>

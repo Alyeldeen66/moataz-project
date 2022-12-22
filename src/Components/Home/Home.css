@@ -1,6 +1,11 @@
 :root {
   --primary: #ffffff;
   --secondry: black;
+  --dark: #1b1c1a;
+}
+
+body {
+  background-color: var(--dark);
 }
 
 .home {
@@ -14,6 +19,7 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  margin: 5% 0 0 0;
 }
 
 .home-container {
@@ -27,6 +33,10 @@
   flex-direction: column;
   color: var(--primary);
   border-radius: 20px;
+}
+
+.home-title {
+  align-self: center;
 }
 
 .home-container h1 {
@@ -56,11 +66,13 @@
 
 .why-us-container {
   background-image: url("../../Images/why-us.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  background-color: var(--dark);
+
   width: 100%;
-  padding: 5rem 0;
+  padding: 2.5rem 0 5rem 0;
 }
 
 .why-us-container img {
@@ -77,11 +89,12 @@ section {
 .why-us-title {
   font-size: 3rem;
   text-align: center;
-  margin: 0 0 3% 0;
+  margin: 0 0 5% 0;
   text-transform: uppercase;
+  color: white;
 }
 .why-us {
-  background: white;
+  background-color: #1b1c1a;
   padding: 30px 0;
 }
 
@@ -109,10 +122,6 @@ section {
   box-shadow: 9px 10px 15px rgba(211, 211, 211, 0.244);
   z-index: 1;
   color: white;
-}
-
-.why-us-card:nth-child(even) {
-  background-color: #1b1c1a;
 }
 
 .how-it-works {
