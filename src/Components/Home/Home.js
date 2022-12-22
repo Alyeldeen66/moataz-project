@@ -21,7 +21,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <section className="why-us">
+      <section id="AboutUs" className="why-us">
         <div className="why-us-container">
           <h1 className="why-us-title">why choose phone pros?</h1>
 
@@ -66,7 +66,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="how-it-works">
+      <section id="howItWorks" className="how-it-works">
         <div className="how-it-works-container">
           <div className="how-it-works-title-container">
             <h2 className="how-it-works-title">HOW IT WORKS</h2>

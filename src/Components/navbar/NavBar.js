@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./NavBar.css";
 import navlogo from "../../Images/logo.png";
+import { Link, useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(true);
   const openMenu = () => {
@@ -10,12 +11,12 @@ const NavBar = () => {
   const closeMenu = () => {
     setShowMenu(true);
   };
-  // Window.inner height
+
   const listenScrollEvent = () => {
     document.getElementById("link-1").classList.remove("link-hover");
     document.getElementById("link-2").classList.remove("link-hover");
     if (
-      window.scrollY > window.innerHeight &&
+      window.scrollY >= window.innerHeight - 100 &&
       window.scrollY < 2 * window.innerHeight
     ) {
       document.getElementById("link-2").classList.remove("link-hover");
@@ -29,7 +30,7 @@ const NavBar = () => {
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
   }, []);
-
+  const navigate = useNavigate();
   return (
     <>
       <div className="nav-container">
@@ -40,20 +41,24 @@ const NavBar = () => {
           <div className="nav-links-container">
             <ul className="nav-links">
               <li>
-                <a id="link-1" href="#">
+                <a id="link-1" href="#AboutUs">
                   About us
                 </a>
               </li>
+
               <li>
-                <a id="link-2" href="#">
+                <a id="link-2" href="#howItWorks">
                   How it works
                 </a>
               </li>
-              <li>
-                <a id="link-3" href="#">
-                  Contact us
-                </a>
-              </li>
+
+              <Link to="/contact-us">
+                <li>
+                  <a id="link-3" href="#">
+                    Contact us
+                  </a>
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -69,19 +74,25 @@ const NavBar = () => {
               <ul className="burger">
                 <div className="burger-list-item">
                   <li>
-                    <a href="#">About us</a>
+                    <a onClick={() => setShowMenu(true)} href="#AboutUs">
+                      About us
+                    </a>
                     <hr></hr>
                   </li>
                 </div>
                 <div className="burger-list-item">
                   <li>
-                    <a href="#">Services</a>
+                    <a onClick={() => setShowMenu(true)} href="#howItWorks">
+                      How it works
+                    </a>
                     <hr></hr>
                   </li>
                 </div>
                 <div className="burger-list-item">
                   <li>
-                    <a href="#">Contact us</a>
+                    <a onClick={() => setShowMenu(true)} href="#">
+                      Contact us
+                    </a>
                     <hr></hr>
                   </li>
                 </div>

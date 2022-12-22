@@ -1,0 +1,47 @@
+.main-contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.contact-us-img {
+  background-image: url("../../Images/Contact-Us-Hero-Image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 75%;
+  border-radius: 2rem;
+}
+.contact-us-img-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-data-container {
+  flex: 1;
+}
+
+.contact-us-data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-data p {
+  width: 80%;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  .main-contact-us {
+    flex-direction: column;
+  }
+  .contact-us-img-container {
+    display: none;
+  }
+}

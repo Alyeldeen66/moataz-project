@@ -38,6 +38,9 @@ body {
 .home-title {
   align-self: center;
 }
+.home-title img {
+  border-radius: 2rem;
+}
 
 .home-container h1 {
   font-size: 50px;
