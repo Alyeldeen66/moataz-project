@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./NavBar.css";
 import navlogo from "../../Images/logo.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(true);
   const openMenu = () => {
@@ -31,78 +31,122 @@ const NavBar = () => {
     window.addEventListener("scroll", listenScrollEvent);
   }, []);
   const navigate = useNavigate();
+  const location = useLocation();
+
   return (
-    <>
-      <div className="nav-container">
-        <div className="main-nav">
-          <div className="nav-image">
-            <img src={navlogo} />
-          </div>
-          <div className="nav-links-container">
-            <ul className="nav-links">
+    <div className="nav-container">
+      <div className="main-nav">
+        <div className="nav-image">
+          <img src={navlogo} />
+        </div>
+        <div className="nav-links-container">
+          <ul className="nav-links">
+            {location.pathname == "/" ? (
               <li>
                 <a id="link-1" href="#AboutUs">
                   About us
                 </a>
               </li>
+            ) : (
+              <Link to="/">
+                <li id="link-1">
+                  {/* <a id="link-1" href="#"> */}
+                  About us
+                  {/* </a> */}
+                </li>
+              </Link>
+            )}
 
+            {location.pathname == "/" ? (
               <li>
                 <a id="link-2" href="#howItWorks">
                   How it works
                 </a>
               </li>
-
-              <Link to="/contact-us">
-                <li>
-                  <a id="link-3" href="#">
-                    Contact us
-                  </a>
+            ) : (
+              <Link to="/">
+                <li id="link-2">
+                  {/* <a id="link-1" href="#"> */}
+                  How it works
+                  {/* </a> */}
                 </li>
               </Link>
-            </ul>
-          </div>
+            )}
 
-          {showMenu ? (
-            <i onClick={openMenu} className="fa-solid fa-bars menu-bar"></i>
-          ) : (
-            <i onClick={closeMenu} class="fa-solid fa-x menu-bar"></i>
-          )}
+            <Link to="/contact-us">
+              <li id="link-3">
+                {/* <a id="link-3" href="#"> */}
+                Contact us
+                {/* </a> */}
+              </li>
+            </Link>
+          </ul>
         </div>
-        {!showMenu && (
-          <div className="small-menu-container">
-            <div className="small-menu">
-              <ul className="burger">
-                <div className="burger-list-item">
+
+        {showMenu ? (
+          <i onClick={openMenu} className="fa-solid fa-bars menu-bar"></i>
+        ) : (
+          <i onClick={closeMenu} class="fa-solid fa-x menu-bar"></i>
+        )}
+      </div>
+      {!showMenu && (
+        <div className="small-menu-container">
+          <div className="small-menu">
+            <ul className="burger">
+              <div className="burger-list-item">
+                {location.pathname == "/" ? (
                   <li>
-                    <a onClick={() => setShowMenu(true)} href="#AboutUs">
+                    <a href="#AboutUs" onClick={() => setShowMenu(true)}>
                       About us
                     </a>
                     <hr></hr>
                   </li>
-                </div>
-                <div className="burger-list-item">
+                ) : (
+                  <Link to="/">
+                    <li>
+                      {/* <a onClick={() => setShowMenu(true)} href="#AboutUs"> */}
+                      About us
+                      {/* </a> */}
+                      <hr></hr>
+                    </li>
+                  </Link>
+                )}
+              </div>
+              <div className="burger-list-item">
+                {location.pathname == "/" ? (
                   <li>
-                    <a onClick={() => setShowMenu(true)} href="#howItWorks">
+                    <a href="#howItWorks" onClick={() => setShowMenu(true)}>
                       How it works
                     </a>
                     <hr></hr>
                   </li>
-                </div>
-                <div className="burger-list-item">
+                ) : (
+                  <Link to="/">
+                    <li>
+                      {/* <a onClick={() => setShowMenu(true)} href="#AboutUs"> */}
+                      How it works
+                      {/* </a> */}
+                      <hr></hr>
+                    </li>
+                  </Link>
+                )}
+              </div>
+              <div className="burger-list-item">
+                <Link to="/contact-us" onClick={() => setShowMenu(true)}>
                   <li>
-                    <a onClick={() => setShowMenu(true)} href="#">
-                      Contact us
-                    </a>
+                    {/* <a onClick={() => setShowMenu(true)} href="#"> */}
+                    Contact us
+                    {/* </a> */}
                     <hr></hr>
                   </li>
-                </div>
-              </ul>
-              <hr></hr>
-            </div>
+                </Link>
+              </div>
+            </ul>
+            <hr></hr>
           </div>
-        )}
-      </div>
-    </>
+        </div>
+      )}
+    </div>
   );
 };
 export default NavBar;

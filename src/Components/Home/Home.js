@@ -78,7 +78,7 @@ function Home() {
 
           <div className="how-it-works-cards">
             <div className="how-it-works-card hiw-1">
-              <i class="fa-solid fa-arrow-pointer"></i>
+              <i className="fa-solid fa-arrow-pointer"></i>
 
               <h3 className="how-it-works-card-title">Card Title</h3>
               <p className="how-it-works-card-text">
@@ -95,7 +95,7 @@ function Home() {
               <div className="how-it-works-animation-circle"></div>
             </div>
             <div className="how-it-works-card hiw-2">
-              <i class="fa-solid fa-cart-shopping"></i>
+              <i className="fa-solid fa-cart-shopping"></i>
 
               <h3 className="how-it-works-card-title">Card Title</h3>
               <p className="how-it-works-card-text">
@@ -112,7 +112,7 @@ function Home() {
               <div className="how-it-works-animation-circle"></div>
             </div>
             <div className="how-it-works-card hiw-3">
-              <i class="fa-solid fa-credit-card"></i>
+              <i className="fa-solid fa-credit-card"></i>
 
               <h3 className="how-it-works-card-title">Card Title</h3>
               <p className="how-it-works-card-text">
