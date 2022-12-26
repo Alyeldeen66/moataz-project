@@ -1,47 +1,43 @@
 .main-contact-us {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-
-.contact-us-img {
-  background-image: url("../../Images/Contact-Us-Hero-Image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40vh;
-  width: 75%;
-  border-radius: 2rem;
-}
-.contact-us-img-container {
-  flex: 1;
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.contact-us-data-container {
-  flex: 1;
-}
-
-.contact-us-data {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  margin: 15vh 0 0 0;
 }
 
-.contact-us-data p {
-  width: 80%;
-  overflow-wrap: break-word;
+.contactUs-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 70px;
+  margin: 30px 0;
+}
+
+.contactUs-text {
+  color: white;
+  font-weight: 400;
+}
+
+.contact-icons {
+  color: white;
+  margin: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  gap: 0 50px;
+}
+
+.contact-icon p {
+  margin: 0;
   text-align: center;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 768px) {
-  .main-contact-us {
-    flex-direction: column;
-  }
-  .contact-us-img-container {
-    display: none;
-  }
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  gap: 30px 0;
 }

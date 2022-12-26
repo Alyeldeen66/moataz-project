@@ -1,29 +1,42 @@
 import React from "react";
 import "./ContactUs.css";
+import "font-awesome/css/font-awesome.min.css";
+
+import NavBar from "../navbar/NavBar";
+import Footer from "../Footer/Footer";
 
 const ContactUs = () => {
   return (
-    <div className="main-contact-us">
-      <div className="contact-us-data-container">
-        <div className="contact-us-data">
-          <h2>Contact Us !</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum
-          </p>
+    <>
+      <NavBar />
+      <div className="main-contact-us">
+        <h2 className="contactUs-title">Let's Have a Chat !</h2>
+        <h3 className="contactUs-text">We would love to hear from you</h3>
+        <div className="contact-icons">
+          <div className="contact-mobile contact-icon">
+            <i class="fa-solid fa-mobile"></i>
+            <p>
+              Call us at
+              <br /> +01234567890
+            </p>
+          </div>
+          <div className="contact-location contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <address>
+              Some St. Somewhere <br /> Downtown Avenue
+            </address>
+          </div>
+          <div className="contact-email contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+            <p>
+              Email us at <br />
+              sales@phone-pros.com
+            </p>
+          </div>
         </div>
       </div>
-      <div className="contact-us-img-container">
-        <div className="contact-us-img"></div>
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

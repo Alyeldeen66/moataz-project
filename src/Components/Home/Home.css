@@ -39,7 +39,10 @@ body {
   align-self: center;
 }
 .home-title img {
-  border-radius: 2rem;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.157);
 }
 
 .home-container h1 {
@@ -190,6 +193,7 @@ section {
 }
 
 .how-it-works-animation-circle {
+  z-index: 1;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -256,7 +260,8 @@ section {
 
 @media screen and (max-width: 576px) {
   .home {
-    background: #424250;
+    background: var(--dark);
+    text-align: center;
   }
   .home-container {
     align-items: center;
@@ -267,12 +272,13 @@ section {
   }
 
   .home-btn {
-    margin: 10px;
+    margin: 20px auto;
+    width: 100%;
   }
   .why-us-cards {
     grid-template-columns: 1fr;
     width: 100%;
-    background: white;
+    background: var(--dark);
   }
 
   .how-it-works-cards {
@@ -292,7 +298,9 @@ section {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .home {
-    background: #424250;
+    background: var(--dark);
+    text-align: center;
+    width: 100%;
   }
 
   .home-container {
@@ -308,7 +316,7 @@ section {
   .why-us-cards {
     grid-template-rows: 2fr;
     width: 100%;
-    background: white;
+    background: var(--dark);
   }
 
   .why-us-card {
@@ -316,6 +324,12 @@ section {
   }
 
   .how-it-works-cards {
-    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "c1" "a1" "c2" "a2" "c3" "a3";
   }
+
+  /* .how-it-works-cards .how-it-works-animation {
+    display: none;
+  } */
 }

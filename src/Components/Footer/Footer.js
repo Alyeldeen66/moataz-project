@@ -123,7 +123,7 @@ const Footer = () => {
       <div>
         <div className="footer-trademark">
           <h5 style={{ textAlign: "center" }}>
-            Copyright © 2022 · REI Call Center · Design by
+            Copyright © 2022 · Phone Pros Call Center
           </h5>
         </div>
       </div>
