@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import ContactUs from "./Components/Contact us/ContactUs";
+import Services from "./Components/Services/Services";
 
 function App() {
   return (
@@ -24,6 +25,14 @@ function App() {
           element={
             <>
               <ContactUs />
+            </>
+          }
+        />
+        <Route
+          path="/services"
+          element={
+            <>
+              <Services />
             </>
           }
         />

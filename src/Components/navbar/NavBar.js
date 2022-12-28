@@ -80,6 +80,13 @@ const NavBar = () => {
                 {/* </a> */}
               </li>
             </Link>
+            <Link to="/services">
+              <li id="link-3">
+                {/* <a id="link-3" href="#"> */}
+                Services
+                {/* </a> */}
+              </li>
+            </Link>
           </ul>
         </div>
 
@@ -138,6 +145,16 @@ const NavBar = () => {
                     Contact us
                     {/* </a> */}
                     <hr></hr>
+                  </li>
+                </Link>
+              </div>
+
+              <div className="burger-list-item">
+                <Link to="/services">
+                  <li>
+                    {/* <a id="link-3" href="#"> */}
+                    Services
+                    {/* </a> */}
                   </li>
                 </Link>
               </div>
