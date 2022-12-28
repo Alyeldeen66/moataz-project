@@ -113,8 +113,18 @@
   .nav-links-container {
     flex: 0.5;
   } */
+  .nav-container {
+  }
   .main-nav {
     max-width: 500px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 30px;
+  }
+  .burger {
+    margin-top: 10vh;
   }
   .nav-links {
     display: none;
@@ -122,6 +132,9 @@
   .menu-bar {
     display: block !important;
     margin-right: 15px;
+  }
+  .nav-image img {
+    width: 50px;
   }
 }
 
