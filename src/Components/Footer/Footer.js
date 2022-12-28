@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
           <hr className="break" />
         </div>
-        <div className="footer-item">
+        {/* <div className="footer-item">
           <div>
             <h3>My Account</h3>
           </div>
@@ -105,7 +105,7 @@ const Footer = () => {
             </ul>
           </div>
           <hr className="break" />
-        </div>
+        </div> */}
       </div>
       <div className="social-media-container">
         <div className="social-media">
