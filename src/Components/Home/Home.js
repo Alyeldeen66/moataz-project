@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import "font-awesome/css/font-awesome.min.css";
 import logo from "../../Images/logo.png";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
@@ -18,8 +18,14 @@ function Home() {
             investment.
           </p>
           <div className="home-btns">
-            <button className="home-btn">GET STARTED</button>
-            <button className="home-btn">LEARN MORE</button>
+            <Link to="/services">
+              {" "}
+              <button className="home-btn">GET STARTED</button>
+            </Link>
+            <Link to="/contact-us">
+              {" "}
+              <button className="home-btn">LEARN MORE</button>{" "}
+            </Link>
           </div>
         </div>
       </div>

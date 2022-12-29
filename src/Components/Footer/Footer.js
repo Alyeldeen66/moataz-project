@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import "font-awesome/css/font-awesome.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -110,13 +111,27 @@ const Footer = () => {
       <div className="social-media-container">
         <div className="social-media">
           <div className="icon">
-            <i class="fa-brands fa-facebook"></i>
+            <Link
+              style={{
+                color: "white",
+              }}
+              to="/"
+            >
+              {" "}
+              <i class="fa-brands fa-facebook"></i>{" "}
+            </Link>
           </div>
           <div className="icon">
-            <i class="fa-brands fa-instagram"></i>
+            <Link style={{ color: "white" }} to="/">
+              {" "}
+              <i class="fa-brands fa-instagram"></i>{" "}
+            </Link>
           </div>
           <div className="icon">
-            <i class="fa-brands fa-linkedin"></i>
+            <Link style={{ color: "white" }} to="/">
+              {" "}
+              <i class="fa-brands fa-linkedin"></i>{" "}
+            </Link>
           </div>
         </div>
       </div>
