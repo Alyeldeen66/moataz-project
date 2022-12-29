@@ -52,6 +52,102 @@ const Services = () => {
             </div>
           </div>
         </div>
+
+        <div className="packages-container">
+          <h1 className="packages-header">Our Packages</h1>
+          <p className="hero-text">Choose one of our premium packages</p>
+
+          <div className="packages-cards">
+            <div className="package-card">
+              <h2 className="package-card-title">White Package</h2>
+              <h2 className="package-card-price">$1,100/mo (1 Month)</h2>
+              <h2 className="package-card-price">$999/mo (3 Months)</h2>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Professional Cold Caller.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Automated Dialer.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Lead Call recordings.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Leads Quality Manager.</span>
+              </p>
+              <button className="package-button">Choose Package</button>
+            </div>
+
+            <div className="package-card">
+              <h2 className="package-card-title">Blue Package</h2>
+              <h2 className="package-card-price">$1,250/mo (1 Month)</h2>
+              <h2 className="package-card-price">$1,150/mo (3 Months)</h2>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Professional Cold Caller.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Automated Dialer.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Lead Call recordings.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Leads Quality Manager.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Acquisition Manager.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>ASANA CRM.</span>
+              </p>
+              <button className="package-button">Choose Package</button>
+            </div>
+
+            <div className="package-card">
+              <h2 className="package-card-title">Green Package</h2>
+              <h2 className="package-card-price">$1,399/mo (1 Month)</h2>
+              <h2 className="package-card-price">$1,250/mo (3 Months)</h2>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Professional Cold Caller.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Automated Dialer.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Lead Call recordings.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Leads Quality Manager.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Acquisition Manager.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>ASANA CRM.</span>
+              </p>
+              <p className="package-card-benefit">
+                <i class="fa-solid fa-check"></i>
+                <span>Leads Manager.</span>
+              </p>
+              <button className="package-button">Choose Package</button>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </>

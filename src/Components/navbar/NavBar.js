@@ -37,7 +37,9 @@ const NavBar = () => {
     <div className="nav-container">
       <div className="main-nav">
         <div className="nav-image">
-          <img src={navlogo} />
+          <a href="https://www.phone-pros.com">
+            <img src={navlogo} />
+          </a>
         </div>
         <div className="nav-links-container">
           <ul className="nav-links">
@@ -49,11 +51,7 @@ const NavBar = () => {
               </li>
             ) : (
               <Link to="/">
-                <li id="link-1">
-                  {/* <a id="link-1" href="#"> */}
-                  About us
-                  {/* </a> */}
-                </li>
+                <li id="link-1">About us</li>
               </Link>
             )}
 

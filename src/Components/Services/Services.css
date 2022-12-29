@@ -52,10 +52,78 @@
   margin: 20px;
 }
 
+.packages-container {
+  background-color: white;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.packages-header {
+  font-size: 80px;
+  color: black;
+  text-transform: uppercase;
+  margin: 40px 0;
+  letter-spacing: 8px;
+}
+
+.packages-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 50px;
+  margin: 15vh 0;
+}
+
+.package-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px 0;
+  color: white;
+  border: 1px solid #1b1c1a;
+  border-radius: 20px;
+  background-color: #1b1c1a;
+  padding: 3rem 4rem;
+  height: 770px;
+}
+
+.package-card-title {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #cd1417;
+}
+
+.package-card-benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 15px;
+}
+
+.package-card-benefit i {
+  font-size: 15px;
+  color: #1b1c1a;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.package-button {
+  background-color: #cd1417;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
 @media screen and (max-width: 576px) {
   .services-container {
     width: 100%;
     padding: 6px;
+    border: 1px solid #1b1c1a;
   }
 
   .services-header {
@@ -67,6 +135,15 @@
   }
 
   .services-cards {
+    flex-direction: column;
+    gap: 50px 0;
+  }
+
+  .packages-header {
+    font-size: 70px;
+  }
+
+  .packages-cards {
     flex-direction: column;
     gap: 50px 0;
   }
