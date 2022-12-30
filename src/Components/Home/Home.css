@@ -24,7 +24,7 @@ body {
 
 .home-container {
   position: absolute;
-  right: 8%;
+  right: 10%;
   width: 500px;
   height: 400px;
   display: flex;
@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   color: var(--primary);
   border-radius: 20px;
+  z-index: 1;
 }
 
 .home-title {
@@ -40,9 +41,6 @@ body {
 }
 .home-title img {
   width: 100%;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.157);
 }
 
 .home-container h1 {
@@ -104,6 +102,7 @@ section {
 .why-us {
   background-color: #1b1c1a;
   padding: 30px 0;
+  margin: 10vh 0;
 }
 
 .why-us-cards {
@@ -127,7 +126,7 @@ section {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  box-shadow: 9px 10px 15px rgba(211, 211, 211, 0.244);
+
   z-index: 1;
   color: white;
 }
@@ -276,7 +275,7 @@ section {
     width: 100%;
     padding: 20px;
     margin: 0 auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
   }
 
   .home-btn {

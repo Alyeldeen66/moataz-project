@@ -15,17 +15,17 @@ const Footer = () => {
             <ul className="footer-list">
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">About Us</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">How It Works</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">Contact Us</a>
                 </li>
               </div>
             </ul>
@@ -40,17 +40,17 @@ const Footer = () => {
             <ul className="footer-list">
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">Our Services</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">Our Mission</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">Our Vision</a>
                 </li>
               </div>
             </ul>
@@ -65,67 +65,38 @@ const Footer = () => {
             <ul className="footer-list">
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">Contact Us</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">Social Media</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="#">Our Pricing</a>
+                  <a href="#">Services</a>
                 </li>
               </div>
             </ul>
           </div>
           <hr className="break" />
         </div>
-        {/* <div className="footer-item">
-          <div>
-            <h3>My Account</h3>
-          </div>
-          <div className="footer-list-container">
-            <ul className="footer-list">
-              <div>
-                <li>
-                  <a href="#">Our Pricing</a>
-                </li>
-              </div>
-              <div>
-                <li>
-                  <a href="#">Our Pricing</a>
-                </li>
-              </div>
-              <div>
-                <li>
-                  <a href="#">Our Pricing</a>
-                </li>
-              </div>
-            </ul>
-          </div>
-          <hr className="break" />
-        </div> */}
       </div>
       <div className="social-media-container">
         <div className="social-media">
           <div className="icon">
-            <Link
-              style={{
-                color: "white",
-              }}
-              to="/"
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100088075917246"
             >
-              {" "}
               <i class="fa-brands fa-facebook"></i>{" "}
-            </Link>
+            </a>
           </div>
           <div className="icon">
-            <Link style={{ color: "white" }} to="/">
-              {" "}
+            <a target="_blank" href="https://www.instagram.com/PhonePros54/">
               <i class="fa-brands fa-instagram"></i>{" "}
-            </Link>
+            </a>
           </div>
           <div className="icon">
             <Link style={{ color: "white" }} to="/">

@@ -16,13 +16,15 @@ const ContactUs = () => {
             <i className="fa-solid fa-mobile"></i>
             <p>
               Call us at
-              <br /> +01234567890
+              <br /> +1(786)-690-5972
+              <br /> +1(210)-888-9222
             </p>
           </div>
           <div className="contact-location contact-icon">
             <i className="fa-solid fa-location-dot"></i>
             <address>
-              Some St. Somewhere <br /> Downtown Avenue
+              Our Location <br />
+              Miami, FL, United States, Florida
             </address>
           </div>
           <div className="contact-email contact-icon">

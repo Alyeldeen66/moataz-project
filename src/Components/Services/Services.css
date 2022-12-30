@@ -1,6 +1,12 @@
+.services-main-page {
+  background: url(../../Images/service_bg.png);
+  background-size: contain;
+  background-position: center;
+}
+
 .services-container {
   text-align: center;
-  margin: 15vh 0 0 0;
+  padding-top: 15vh;
   color: white;
 }
 
@@ -8,13 +14,12 @@
   font-size: 80px;
   color: white;
   text-transform: uppercase;
-  margin: 40px 0;
-  letter-spacing: 8px;
+  margin: -10px 0;
 }
 
 .hero-text {
-  font-size: 25px;
-  word-spacing: 8px;
+  font-size: 20px;
+  font-family: sans-serif;
 }
 
 .services-cards {
@@ -22,48 +27,65 @@
   justify-content: center;
   align-items: center;
   gap: 0 50px;
-  margin: 15vh 0;
+  margin: 5vh 0 8vh 0;
 }
 
 .service-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 10px 0;
-  background-color: #cd1417;
+  background: url(../../Images/service-card-bg.jpg);
+  background-position: center;
+  background-size: cover;
   width: 400px;
-  min-height: 300px;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.209);
+  height: 635px;
+  padding: 3rem;
+
+  border-radius: 50px;
+  transition: transform 0.8s, box-shadow 0.8s;
+}
+
+.service-card:hover {
+  transform: scale(1.02);
+  box-shadow: 16px 16px 16px rgba(255, 255, 255, 0.08);
 }
 
 .service-icon {
+  font-size: 20px;
   background-color: #1b1c1a;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
 }
 
 .service-card-title {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .service-card li {
-  margin: 20px;
+  margin: 5px;
+}
+
+.service-card-text {
+  font-family: sans-serif;
+  font-weight: 100;
 }
 
 .packages-container {
-  background-color: white;
+  background: url(../../Images/service-bg-inverted.png);
+  background-size: cover;
+  background-position: center;
   text-align: center;
   border: 1px solid white;
 }
 
 .packages-header {
   font-size: 80px;
-  color: black;
+  color: #1b1c1a;
   text-transform: uppercase;
-  margin: 40px 0;
-  letter-spacing: 8px;
+  letter-spacing: -2px;
+  margin: 10vh 0 -10px 0;
 }
 
 .packages-cards {
@@ -71,27 +93,60 @@
   justify-content: center;
   align-items: center;
   gap: 0 50px;
-  margin: 15vh 0;
+  margin: 5vh 0 15vh 0;
 }
 
 .package-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px 0;
   color: white;
-  border: 1px solid #1b1c1a;
-  border-radius: 20px;
+  border-radius: 50px;
   background-color: #1b1c1a;
   padding: 3rem 4rem;
   height: 770px;
+  width: 400px;
+}
+
+.package-card:first-child {
+  background: url(../../Images/white-package.jpg);
+  color: black;
+}
+
+.package-card:nth-child(2) {
+  background: url(../../Images/blue-package.jpg);
+  color: white;
+}
+
+.package-card:nth-child(2) > h2 {
+  margin-bottom: 15px;
+}
+
+.package-card:nth-child(2) i {
+  color: #1b1c1a;
+  background-color: white;
+}
+
+.package-card:last-child {
+  background: url(../../Images/green-package.jpg);
+}
+
+.package-card:last-child > h2 {
+  margin-bottom: 15px;
+}
+
+.package-card:last-child i {
+  color: #1b1c1a;
+  background-color: white;
 }
 
 .package-card-title {
-  font-size: 20px;
-  margin: 20px 0;
+  font-size: 34px;
+  margin: 20px 0 -10px 0;
   color: #cd1417;
+  text-align: left;
 }
 
 .package-card-benefit {
@@ -101,10 +156,28 @@
   gap: 0 15px;
 }
 
+.first {
+  margin-top: 20px;
+}
+
+.package-card-price {
+  font-size: 20px;
+  text-align: left;
+}
+
+.per-month {
+  font-family: sans-serif;
+}
+
+.per-month-sub {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
 .package-card-benefit i {
   font-size: 15px;
-  color: #1b1c1a;
-  background-color: white;
+  color: white;
+  background-color: #1b1c1a;
   border-radius: 50%;
   padding: 5px;
 }
@@ -117,9 +190,21 @@
   padding: 10px 20px;
   border-radius: 20px;
   margin: 20px 0;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.package-button:hover {
+  background-color: white;
+  color: #1b1c1a;
+  border: 1px solid #1b1c1a;
 }
 
 @media screen and (max-width: 576px) {
+  .services-main-page {
+    margin-top: 10vh;
+    border: 1px solid #1b1c1a;
+  }
+
   .services-container {
     width: 100%;
     padding: 6px;
@@ -127,7 +212,7 @@
   }
 
   .services-header {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .service-card {
@@ -146,5 +231,13 @@
   .packages-cards {
     flex-direction: column;
     gap: 50px 0;
+  }
+
+  .package-card {
+    width: 350px;
+  }
+
+  .package-card-benefit span {
+    font-size: 14px;
   }
 }
