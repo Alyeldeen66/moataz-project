@@ -19,12 +19,10 @@ function Home() {
           </p>
           <div className="home-btns">
             <Link to="/services">
-              {" "}
               <button className="home-btn">GET STARTED</button>
             </Link>
             <Link to="/contact-us">
-              {" "}
-              <button className="home-btn">LEARN MORE</button>{" "}
+              <button className="home-btn">LEARN MORE</button>
             </Link>
           </div>
         </div>

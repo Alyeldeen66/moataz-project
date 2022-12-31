@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
 html {
   background-color: #1b1c1a;
 }
@@ -8,10 +10,11 @@ html {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (min-width: 576px) {
   body {
-    background-color: #424250 I !important;
+    background-color: #1b1c1a !important;
   }
 }
